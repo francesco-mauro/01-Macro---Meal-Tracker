@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Tracker</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 1rem; }
+        .input-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.5rem; }
+        input { padding: 0.5rem; width: 100%; box-sizing: border-box; }
+        button { padding: 0.5rem 1rem; background: #333; color: white; border: none; cursor: pointer; }
+        .meal-list { margin-top: 2rem; list-style: none; padding: 0; }
+        .meal-item { background: #f4f4f4; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Macro Tracker</h1>
+    
+    <form id="meal-form">
+        <div class="input-group">
+            <label for="foodName">Alimento</label>
+            <input type="text" id="foodName" placeholder="Es. Petto di pollo" required>
+        </div>
+        <div class="input-group">
+            <label for="calories">Calorie (kcal)</label>
+            <input type="number" id="calories" placeholder="Es. 165" required>
+        </div>
+        <div class="input-group">
+            <label for="protein">Proteine (g)</label>
+            <input type="number" id="protein" placeholder="Es. 31" required>
+        </div>
+        <button type="submit">Aggiungi Pasto</button>
+    </form>
+
+    <h2>I tuoi Pasti:</h2>
+    <ul id="meal-list" class="meal-list">
+        <!-- I pasti appariranno qui -->
+    </ul>
+
+    <!-- Nota il type="module", fondamentale per usare import/export più avanti! -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
