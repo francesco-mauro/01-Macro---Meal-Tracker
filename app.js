@@ -1,4 +1,4 @@
-import FoodItem from "./FoodItem.js";
+import {FoodItem} from "./FoodItem.js";
 
 let meals = [];
 
